@@ -1,0 +1,57 @@
+/** @format */
+
+.grid-container-main {
+	display: grid;
+	grid-template-areas:
+		'first first first first first first'
+		'column1 column1 column2 column2 column3 column3';
+	gap: 10px;
+	background-color: #2196f3;
+	padding: 10px;
+}
+
+.grid-container-footer {
+	display: grid;
+	grid-template-areas: 'footer1 footer2';
+	gap: 10px;
+	background-color: #2196f3;
+	padding: 10px;
+}
+
+.first-main-row {
+	grid-area: first;
+}
+
+.second-main-row-column1 {
+	grid-area: column1;
+}
+
+.second-main-row-column2 {
+	grid-area: column2;
+}
+
+.second-main-row-column3 {
+	grid-area: column3;
+}
+
+.first-footer-column {
+	grid-area: footer1;
+}
+
+.second-footer-column {
+	grid-area: footer2;
+}
+
+.grid-container-main > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+
+.grid-container-footer > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
